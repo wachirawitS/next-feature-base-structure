@@ -1,1 +1,0 @@
-export { RecentClaimsWidget } from "./widgets/recent-claims-widget";

@@ -1,10 +1,8 @@
-import React from 'react'
+import ClaimListView from '@/features/claims/components/claim-list-view'
 
-type Props = {}
-
-const ClaimsPage = (props: Props) => {
+const ClaimsPage = () => {
   return (
-    <div>ClaimsPage</div>
+    <ClaimListView/>
   )
 }
 
