@@ -15,12 +15,23 @@ src/
 │   └── shared/               # Reusable components across features (e.g., GlobalPagination)
 ├── features/                 # ⭐️ Core Domain Modules (The heart of the app)
 │   ├── claims/               # Domain: Claims
-│   │   ├── components/       # UI specific to Claims (e.g., ClaimTable, ClaimStatusBadge)
-│   │   ├── hooks/            # Feature-specific state/logic (e.g., useClaims)
+│   │   ├── components/       # UI specific to Claims (e.g., claim-table.tsx)
+│   │   ├── hooks/            # Feature-specific state/logic (e.g., use-claims.ts)
 │   │   ├── services/         # API calls and data fetching
 │   │   ├── types/            # TypeScript interfaces for this domain
 │   │   └── index.ts          # 🚪 The "Gatekeeper" (Public API Export)
 │   └── users/                # Domain: Users
-├── proxy.ts                  # Programmatic redirects based on incoming request properties     
+├── middleware.ts             # Programmatic redirects based on incoming request properties     
 ├── lib/                      # 🛠️ Global Utilities (e.g., cn(), axios client)
 └── types/                    # 🏷️ Global Types (e.g., API Responses, BaseEntity)
+
+### 🏷️ Naming Conventions
+
+To maintain consistency, improve readability, and avoid OS-level case-sensitivity issues across the team, we strictly follow these naming standards:
+
+- **Files and Folders:** Use `kebab-case` for ALL files and directories. 
+  - *Example:* `user-select.tsx`, `use-claims.ts`, `claim-list-view.tsx`
+- **Variables and Functions:** Use `camelCase`.
+  - *Example:* `const userData`, `function calculateTotal()`, `const isModalOpen`
+- **Components and Types/Interfaces:** Use `PascalCase` for React Component declarations and TypeScript types.
+  - *Example:* `export function UserSelect()`, `interface ClaimDetail`, `type UserRole`
