@@ -21,7 +21,7 @@ src/
 │   │   ├── types/            # TypeScript interfaces for this domain
 │   │   └── index.ts          # 🚪 The "Gatekeeper" (Public API Export)
 │   └── users/                # Domain: Users
-├── middleware.ts             # Programmatic redirects based on incoming request properties     
+├── proxy.ts             # Programmatic redirects based on incoming request properties     
 ├── lib/                      # 🛠️ Global Utilities (e.g., cn(), axios client)
 └── types/                    # 🏷️ Global Types (e.g., API Responses, BaseEntity)
 ```
