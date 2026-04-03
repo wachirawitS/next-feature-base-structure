@@ -24,6 +24,7 @@ src/
 ├── middleware.ts             # Programmatic redirects based on incoming request properties     
 ├── lib/                      # 🛠️ Global Utilities (e.g., cn(), axios client)
 └── types/                    # 🏷️ Global Types (e.g., API Responses, BaseEntity)
+```
 
 ### 🏷️ Naming Conventions
 
